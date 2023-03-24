@@ -83,7 +83,7 @@ a{
 /* first Container */
 .firstContainer{
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 40px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,7 @@ a{
 }
 /* for left */
 .left{
-    flex: 3;
+    width: 40%;
     
     display: flex;
     flex-direction: column;
@@ -134,13 +134,14 @@ h4{
     opacity: 0.7;
     line-height: 25px;
 }
+
 .left button{
     margin-right: 40%;
     margin-top: 20px;
 }
 /* for right */
 .right{
-    flex: 4;
+    width: 60%;
     overflow-y: visible;
     
 }
@@ -150,32 +151,31 @@ h4{
     
 }
 .inner-right{
-    width: 80%;
-    height: 134%;
+    width: 65%;
+    height: 120%;
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     
 }
 
 .img-container{
     position: absolute;
-    width: 800px;
-    height: 1000px;
-    top: -20%;
+    width: 900px;
+    height: 900px;
+    top: -10%;
     left: -10%;
-    background: url(images/bg-intro-desktop.svg);
+    
     transform: rotateX(35deg)
 }
 .mobile-img-container{
     width: 600px;
-    
     position: absolute;
     height: 100%;
-    background-image: url(images/image-mockups.png);
-    top: -8%;
-    left: 10%;
+    
+    top: 0%;
+    left: 15%;
     
 }
 
@@ -210,6 +210,7 @@ h4{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
     
 }
  .iconText{
@@ -254,3 +255,77 @@ h4{
 }
 
 
+/* for responsive */
+@media (max-width : 560px){
+    .secondContainer{
+        height: auto;
+    }
+    .inner-secondcon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .iconTextContainer{
+        flex-wrap: wrap;
+        
+        margin-left: 20px;
+        
+    }
+    .iconText{
+        margin: 30px;
+        
+    }
+    .left{
+        width: 100%;
+        height: 60%;
+    }
+    .h1Holder{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        height:50%;
+    }
+    .content-container{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        
+        
+    }
+    
+    .inner-right{
+        width: 100%;
+        height: 130%;
+        
+    }
+    .img-container{
+       width: 120%;
+       height: 130%;
+       top: 0;
+       left: 0;
+    }
+    .mobile-img-container{
+        width: 80%;
+        height: 120%;
+        left: 40px;
+    }
+    .text-box{
+        margin-top: 150px;
+    }
+    .text-box button{
+        margin-left: 35%;
+    }
+    .h1Holder{
+        width: 70%;
+        
+    }
+    .h1Holder h1{
+        font-size: 40px;
+    }
+    .h4Holder{
+        width: 70%;
+    }
+}
