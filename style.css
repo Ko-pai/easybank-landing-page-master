@@ -537,7 +537,7 @@ button:active{
     }
     
 
-    /* for second container */
+    /* for first container */
     .secondContainer{
         height: auto;
     }
@@ -580,9 +580,9 @@ button:active{
        left: 0;
     }
     .mobile-img-container{
-        width: 80%;
+        width: 90%;
         height: 150%;
-        left: 45px;
+        left: 35px;
         top: -10%;
     }
     .text-box{
@@ -696,4 +696,31 @@ button:active{
     .thirdFooterDiv h4{
         
     }
+}
+
+@media(max-width : 390px){
+    main{
+        overflow-x: hidden;
+    }
+    .text-box{
+        height: auto;
+        margin-top: 230px;
+    }
+    .secondContainer{
+        margin-top: 100px;
+    }
+    .header{
+        justify-content: flex-start;
+        
+    }
+    .logo{
+        margin-left: 50px;
+    }
+    .hamburger{
+        margin-left: 40px;
+    }
+    .good{
+        top: 8%;
+    }
+    .mobile-img-container{}
 }
