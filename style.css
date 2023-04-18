@@ -394,7 +394,7 @@ button:active{
     letter-spacing: normal;
 }
 .text-con h3:active{
-    color: hsl(136, 81%, 42%);
+    color: hsl(136, 65%, 51%);
 }
 .text-con h5{
     opacity: 0.5;
@@ -431,9 +431,86 @@ button:active{
 .fourthContainer{
     width: 100%;
     height: calc(100vh - 70vh);
-    background-color: rgb(175, 0, 88);
+    background-color: hsl(233, 26%, 24%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+  /* first Footer Div */
+.firstFooterDiv{
+    width: 250px;
+    height: 100%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.footerImage{
+    width: 80%;
+}
+.footerImage img{
+    width: 100%;
+    color: #063126;
+}
+.firstFooterDiv ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+}
+.firstFooterDiv ul > li{
+    list-style: none;
+    margin-left: 1rem;
+}
+.icon :hover{
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+}
+.fa-brands{
+    font-size: 22px;
+    color: white;
+}
+/* second footer Div */
+.secondFooterDiv{
+    width: 700px;
+   
+    height: 100%;
+    margin-left: 9%;
+}
+.secondFooterDiv ul{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 30px;
+}
+.secondFooterDiv li{
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 1.7rem;
+}
+.footerText li:hover{
+    cursor: pointer;
+    color: hsl(136, 65%, 51%);
 }
 
+/* for third Footer Div */
+.thirdFooterDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.thirdFooterDiv h4{
+    color: white;
+    opacity: 0.5;
+    font-weight: 500;
+    user-select: none;
+}
+.thirdFooterDiv button:active{
+    background-color: hsla(136, 38%, 92%, 0.68);
+}
 
 
 /* for responsive */
@@ -548,6 +625,7 @@ button:active{
     .travel-card-container{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .thirdContainer{
@@ -555,7 +633,8 @@ button:active{
     }
 
     .innerThirdContainer{
-        width: 140%;
+        width: 100%;
+        padding: 0;
     }
     .h1Con h1{
         margin-left: 35px;
@@ -569,6 +648,52 @@ button:active{
     /* for fourth container */
     .fourthContainer{
         
+        height: calc(100vh - 20vh);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-brands{
+        font-size: 25px;
+    }
+    .footerImage{
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    .firstFooterDiv ul > li{
+        margin-left: 1.75rem;
+    }
+    .firstFooterDiv{
+        display: flex;
+        justify-content: unset;
+        height: 100px;
+        margin-left: 0;
+    }
+    .secondFooterDiv{
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .secondFooterDiv ul{
+        width: auto;
+        display: block;
+        
+    }
+    .secondFooterDiv li{
+        margin-top: 1.2rem;
+    }
+    .footerText{
+       
+    }
+    .footerText li{
+        text-align: center;
+    }
+    .thirdFooterDiv{
+        align-items: center;
+        margin-left: 7%;
+    }
+    .thirdFooterDiv h4{
         
     }
 }

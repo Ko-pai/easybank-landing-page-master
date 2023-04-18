@@ -174,4 +174,11 @@ travelData.map((d)=>{
 })
 
 
+//for footer
+
+const lol = document.querySelector("li")
+
+lol.addEventListener("click",()=>{
+    console.log("Hello");
+})
 
