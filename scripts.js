@@ -117,7 +117,11 @@ humburger.addEventListener("click",(e)=>{
 })
 
 window.addEventListener("load",(e)=>{
-    
+    if(e.target.body.offsetWidth  < 550){
+        change.src = "images/bg-intro-mobile.svg"
+    }else{
+        change.src = "images/bg-intro-desktop.svg"
+    }
     indexButton.style.zIndex = "1"
 })
 
