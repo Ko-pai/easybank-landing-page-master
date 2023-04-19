@@ -116,7 +116,8 @@ humburger.addEventListener("click",(e)=>{
     }
 })
 
-window.addEventListener("load",()=>{
+window.addEventListener("load",(e)=>{
+    
     indexButton.style.zIndex = "1"
 })
 
@@ -176,9 +177,17 @@ travelData.map((d)=>{
 
 //for footer
 
-const lol = document.querySelector("li")
+const lol = document.querySelector("body")
+const change = document.querySelector(".changeImage")
 
-lol.addEventListener("click",()=>{
-    console.log("Hello");
+lol.addEventListener("click",(e)=>{
+    if(e.target.offsetWidth < 550){
+        change.src = "images/bg-intro-mobile.svg"
+    }else{
+        change.src = "images/bg-intro-desktop.svg"
+    }
 })
+
+
+
 
