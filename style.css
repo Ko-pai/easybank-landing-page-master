@@ -50,8 +50,10 @@ main{
 }
 .good{
     width: 100vw;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.315);
+    height: 100vh;
+    background:linear-gradient(hsla(233, 26%, 24%,0.65),
+    hsla(220, 63%, 72%, 0.352),
+    hsl(0, 0%, 98%,0.36));
     position: inherit;
     opacity: 0;
     display: none;
@@ -514,6 +516,50 @@ button:active{
 
 
 /* for responsive */
+@media(max-width : 1280px){
+    .content-container{
+        width: 80%;
+    }
+    .secondContainer{
+        height: calc(100vh - 80px);
+        width: 100%;
+    }
+    .text-box{
+        width: auto;
+    }
+    .h1Holder{
+        width: 100%;
+        
+    }
+    .inner-right{
+        width: 85%;
+    }
+    .header{
+        justify-content: unset;
+    }
+    .logo,.middle-div,.header > button{
+        margin-left: 120px;
+    }
+    .firstContainer{
+        height: calc(100vh - 40px);
+    }
+    .h4Holder{
+        margin-top: 0px;
+    }
+    .innerThirdContainer{
+        padding: 0;
+        
+    }
+    .travel-card-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .thirdContainer{
+        height: calc(100vh - -393px);
+    }
+
+}
+
 @media (max-width : 560px){
     /* for header */
     .middle-div{
@@ -524,11 +570,15 @@ button:active{
     }
 
     .header{
-      justify-content: space-around;
       
+      
+    }
+    .logo{
+        margin-left: 100px;
     }
     .hamburger{
         display: flex;
+        margin-left: 100px;
     }
 
     /* for first container */
@@ -552,9 +602,7 @@ button:active{
         width: 100%;
         height: 60%;
     }
-    .h1Holder{
-        width: 100%;
-    }
+    
     .right{
         width: 100%;
         height:50%;
@@ -592,8 +640,7 @@ button:active{
         margin-left: 35%;
     }
     .h1Holder{
-        width: 70%;
-        
+        width: 70%; 
     }
     .h1Holder h1{
         font-size: 40px;
@@ -717,10 +764,56 @@ button:active{
         margin-left: 50px;
     }
     .hamburger{
-        margin-left: 40px;
+        margin-left: 50px;
     }
     .good{
-        top: 8%;
+        top: 12%;
+    }
+    .h4Holder,.h1Holder {
+        width: 90%;
     }
     .mobile-img-container{}
 }
+/* @media(max-width : 1280px){
+    .content-container{
+        width: 80%;
+    }
+    .h1Holder{
+        width: 100%;
+    }
+    .inner-right{
+        width: 85%;
+    }
+    .header{
+        justify-content: unset;
+    }
+    .logo,.middle-div,.header > button{
+        margin-left: 120px;
+    }
+} */
+/* @media(max-width : 1024px){
+    .firstContainer{
+        width: 150%;
+        height: calc(100vh - 30px);
+    }
+    .secondContainer{
+        width: 150%;
+        height: calc(100vh - 100px);
+    }
+    .thirdContainer{
+        width: 140%;
+        height: 100vh;
+        padding: 0;
+    }
+    .travel-card-container{
+        width: auto;
+    }
+    .h1Con{
+        width: 90%;
+    }
+
+    .fourthContainer{
+        width: 140%;
+        height: calc(100vh - 60vh);
+    }
+} */
